@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Caprasimo&family=Nunito:wght@700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:wght@400;700&family=Source+Sans+3&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* All my variables and Classes will be in small letter */
+
+/* Defining Color Variable */
+:root{
+    --ad_bar_color: #FA9694;
+    --nav_bar_color: #BDE0FE;
+    --text_color : black;
+    --card_bg_color : white;
+}
+
+/* Defining Fonts */
+:root{
+--nav-bar-font : 'Source Sans 3', sans-serif;
+}
+
+
+
+
+body{
+    overflow: auto;
+    
+}
+
+div{
+    font-family: var(--nav-bar-font);
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+/* Container Properties */
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+
+
+    background-image: url(Light_BG.jpg);
+    background-size:100%;
+    
+}
+
+/* All Header Properties */
+header{
+    /* width: 100vw; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* All Ad Bar Properties */
+.adbar {
+    /* width: 100vw; */
+    height: 2.5vh;
+    background-image: linear-gradient(to left, #ffafff, #a3adff, #ffafff);
+    position: relative;
+
+    font-family: var(--ad-bar-font);
+    font-size: 0.8rem;
+    /* text-align: center; */
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+/* All Nav Bar Properties */
+.navbarPC{
+    /* width: 100vw; */
+    height: 4vh;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    background-image: linear-gradient(to right ,#a3c2ff , #ffafff ,#a3c2ff   );
+
+    /* overflow-x: auto; */
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbarPHN{
+
+    display: none;
+}
+
+.Website{
+    font-size: 15px;
+    color: rgb(70, 70, 70);
+}
+
+.navlink{
+    font-family: var(--nav-bar-font);
+    font-weight: 500;
+    padding: 0 2rem;
+}
+
+.navlink:hover, i:hover{
+    transition: 0.5s ease; 
+    background-color: #00eeff;
+    border: 2px solid yellow;
+    cursor: pointer;
+}
+
+.navbarPC > :nth-child(3){
+    background-color: #00eeff9c;
+}
+
+
+
+.connectusPC{
+    display: flex;
+    gap: 1.8rem;
+}
+
+
+
+a{
+    color: var(--text_color);
+    text-decoration: none;
+    transition: 0s ;
+}
+
+main{
+    padding: 5vh 5vw;
+}
+
+/* Defining Default Card properties */
+
+.card{
+    height: 23rem;
+    width: 15rem;
+    background-color: var(--card_bg_color);
+    border-radius: 10%;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.427);
+    transition: all 1s ease;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 4px 5px yellow;
+    transition: all 1s ease;
+}
+
+.cardimg{
+    width: 100%;
+    height: 60%;
+    background-size:cover;
+}
+
+
+
+.cardtext{
+    width: 100%;
+    height: 25%;
+    padding: 0 10px;
+
+    text-align: center;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* .cardtext:hover */
+
+
+/* One By One Year Card Editing */
+
+.year-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+/* On Click Links */
+
+
+.S1 .cardimg{
+    background-image: url(Imgs_For_Events/ANT.JPG );
+
+}
+.S2 .cardimg{
+    background-image: url(Imgs_For_Events/DIY.JPG  );
+    background-position: center;
+}
+
+.S3 .cardimg{
+    /* background-position: center; */
+    background-image: url(Imgs_For_Events/FRS.jpg  );
+}
+.S4 .cardimg{
+    background-image: url(Imgs_For_Events/PST.jpg  );
+}
+
+.S1 .cardimg:hover{
+    background-image: url(Imgs_For_Events/ANT.JPG );
+    transition: all ease 1s;
+    background-position-x: right ;
+}
+
+.S2 .cardimg:hover{
+    background-image: url(Imgs_For_Events/DIY.JPG  );
+    transition: all ease 1s;
+    background-position-x: right ;
+    background-position: right;
+}
+.S3 .cardimg:hover{
+    background-image: url(Imgs_For_Events/FRS.jpg  );
+    transition: all ease 1s;
+    background-position-x: right ;
+}
+.S4 .cardimg:hover{
+    background-image: url(Imgs_For_Events/PST.jpg  );
+    transition: all ease 1s;
+    background-position-x: right ;
+}
+
+
